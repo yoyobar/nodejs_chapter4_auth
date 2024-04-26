@@ -50,9 +50,6 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
                             li.appendChild(postContentSpan); // 'li' 요소에 내용 'span'을 추가합니다.
                             li.appendChild(usernameSpan); // 'li' 요소에 사용자 이름 'span'을 추가합니다.
                             postsList.appendChild(li); // 완성된 'li' 요소를 게시물 목록에 추가합니다.
-                            setTimeout(() => {
-                                postsList.innerHTML = '';
-                            }, 30000);
                         });
                         const h2 = document.querySelector('h2'); // 페이지의 'h2' 요소를 찾습니다.
                         postsList.classList.remove('hide'); // 게시물 목록을 보이게 합니다.
